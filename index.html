@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي الاحترافي</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0d3b66;
+            color: white;
+            padding: 30px 0;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        header h1 { margin: 0; font-size: 36px; }
+
+        nav {
+            background-color: #1c1c1c;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background-color: #0d3b66; color: #ffdd00; }
+
+        section {
+            padding: 80px 20px;
+            transition: background-color 0.5s;
+            background-size: cover;
+            background-position: center;
+        }
+
+        section:nth-child(even) { background-color: #e0e7ff; }
+
+        section h2 { font-size: 32px; color: #0d3b66; margin-bottom: 20px; }
+
+        section p {
+            font-size: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #0d3b66;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover { background-color: #072f52; }
+
+        .section-img {
+            width: 200px;
+            margin: 20px 0;
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 15px 0;
+        }
+
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Logo">
+    <h1>مرحباً بك في موقعي الاحترافي</h1>
+</header>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن الموقع</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<section id="home" style="background-image: url('https://images.unsplash.com/photo-1557682250-8e3c9d54fcee?auto=format&fit=crop&w=1950&q=80'); color:white;">
+    <h2>الرئيسية</h2>
+    <p id="statusText">موقعي يعمل بنجاح ✅</p>
+    <button onclick="changeText()">اضغط هنا للتفاعل</button>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Decorative" class="section-img">
+</section>
+
+<section id="about" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80'); color:white;">
+    <h2>عن الموقع</h2>
+    <p>هذا الموقع لتعلم HTML وCSS وJavaScript خطوة بخطوة بطريقة ممتعة وتفاعلية! ستتعلم كيفية تصميم موقع كامل وجذاب.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910766.png" alt="About" class="section-img">
+</section>
+
+<section id="services" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1950&q=80'); color:white;">
+    <h2>الخدمات</h2>
+    <p>نقدم دروساً، مشاريع تفاعلية، وأمثلة عملية لتطوير مهارات البرمجة وتصميم المواقع.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910767.png" alt="Services" class="section-img">
+</section>
+
+<section id="contact" style="background-image: url('https://images.unsplash.com/photo-1537432376769-00a5d0b1dc1d?auto=format&fit=crop&w=1950&q=80'); color:white;">
+    <h2>اتصل بنا</h2>
+    <p>يمكنك مراسلتنا عبر البريد الإلكتروني: info@example.com</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910770.png" alt="Contact" class="section-img">
+</section>
+
+<script>
+    function changeText() {
+        document.getElementById("statusText").innerHTML = "لقد ضغطت على الزر! 🎉";
+    }
+</script>
+
+<footer>
+    &copy; 2026 موقعي الاحترافي. جميع الحقوق محفوظة.
+</footer>
+
+</body>
+</html>content://com.android.externalstorage.documents/tree/primary%3Aweb-learning::primary:web-learning/index.html
